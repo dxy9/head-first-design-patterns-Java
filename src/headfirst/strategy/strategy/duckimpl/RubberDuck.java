@@ -1,9 +1,13 @@
-package headfirst.strategy;
+package headfirst.strategy.strategy.duckimpl;
+
+import headfirst.strategy.strategy.quackimpl.FlyNoWay;
+import headfirst.strategy.strategy.quackimpl.Squeak;
+import headfirst.strategy.strategy.base.Duck;
 
 /**
  * Created by Gavin on 2017/2/10.
  */
-public class RubberDuck extends Duck{
+public class RubberDuck extends Duck {
     public RubberDuck() {
         flyBehavior = new FlyNoWay();
         quackBehavior = new Squeak();

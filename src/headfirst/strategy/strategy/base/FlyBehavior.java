@@ -1,4 +1,4 @@
-package headfirst.strategy;
+package headfirst.strategy.strategy.base;
 
 /**
  * Created by Gavin on 2017/2/10.

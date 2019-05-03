@@ -1,9 +1,13 @@
-package headfirst.strategy;
+package headfirst.strategy.strategy.duckimpl;
+
+import headfirst.strategy.strategy.quackimpl.FlyWithWings;
+import headfirst.strategy.strategy.quackimpl.Quack;
+import headfirst.strategy.strategy.base.Duck;
 
 /**
  * Created by Gavin on 2017/2/10.
  */
-public class MallardDuck extends Duck {
+public class MallardDuck/*野鸭*/ extends Duck {
 
     public MallardDuck() {
         quackBehavior = new Quack();

@@ -1,4 +1,4 @@
-package headfirst.strategy;
+package headfirst.strategy.strategy.base;
 
 /**
  * Created by Gavin on 2017/2/8.
@@ -14,7 +14,7 @@ public abstract class Duck {
     public abstract void display();
 
     public void swim() {
-        System.out.println("All ducks float, even decoys!");
+        System.out.println("All ducks float/*浮动*/, even decoys!");
     }
 
     public void performFly() {

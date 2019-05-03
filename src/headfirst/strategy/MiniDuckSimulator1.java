@@ -1,5 +1,10 @@
 package headfirst.strategy;
 
+import headfirst.strategy.strategy.base.Duck;
+import headfirst.strategy.strategy.duckimpl.MallardDuck;
+import headfirst.strategy.strategy.duckimpl.ModelDuck;
+import headfirst.strategy.strategy.quackimpl.FlyRocketPowered;
+
 /**
  * Created by Gavin on 2017/2/10.
  */

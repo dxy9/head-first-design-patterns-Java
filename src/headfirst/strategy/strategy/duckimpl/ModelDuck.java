@@ -1,4 +1,8 @@
-package headfirst.strategy;
+package headfirst.strategy.strategy.duckimpl;
+
+import headfirst.strategy.strategy.quackimpl.FlyNoWay;
+import headfirst.strategy.strategy.quackimpl.Quack;
+import headfirst.strategy.strategy.base.Duck;
 
 /**
  * Created by Gavin on 2017/2/10.
