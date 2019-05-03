@@ -3,9 +3,7 @@ package headfirst.command.undo;
 /**
  * Created by Gavin on 2017/3/14.
  */
-public class CeilingFanOffCommand implements Command {
-    CeilingFan ceilingFan;
-    int prevSpeed;
+public class CeilingFanOffCommand extends BaseCeilingFanCommand {
 
     public CeilingFanOffCommand(CeilingFan ceilingFan) {
         this.ceilingFan = ceilingFan;
@@ -16,15 +14,4 @@ public class CeilingFanOffCommand implements Command {
         ceilingFan.off();
     }
 
-    public void undo() {
-        if (prevSpeed == CeilingFan.HIGH) {
-            ceilingFan.high();
-        } else if (prevSpeed == CeilingFan.MEDIUM) {
-            ceilingFan.medium();
-        } else if (prevSpeed == CeilingFan.LOW) {
-            ceilingFan.low();
-        } else if (prevSpeed == CeilingFan.OFF) {
-            ceilingFan.off();
-        }
-    }
 }
