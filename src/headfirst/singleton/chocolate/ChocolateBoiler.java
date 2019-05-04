@@ -1,10 +1,5 @@
 package headfirst.singleton.chocolate;
 
-import headfirst.factory.pizzaaf.Pizza;
-
-import java.util.EmptyStackException;
-import java.util.jar.JarEntry;
-
 /**
  * Created by Gavin on 2017/3/10.
  */

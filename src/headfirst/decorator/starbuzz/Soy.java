@@ -3,7 +3,7 @@ package headfirst.decorator.starbuzz;
 /**
  * Created by Gavin on 2017/3/7.
  */
-public class Soy extends CondimentDecorator {
+public class Soy/*豆浆*/ extends CondimentDecorator {
     Beverage beverage;
 
     @Override

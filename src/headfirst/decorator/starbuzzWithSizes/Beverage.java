@@ -4,7 +4,7 @@ package headfirst.decorator.starbuzzWithSizes;
  * Created by Gavin on 2017/3/8.
  */
 public abstract class Beverage {
-    public enum Size { TALL, GRANDE, VENTI };
+    public enum Size { TALL/*中杯*/, GRANDE/*大杯*/, VENTI/*超大杯*/ };
     Size size = Size.TALL;
     String description = "Unknown Beverage";
 

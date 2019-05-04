@@ -3,7 +3,7 @@ package headfirst.decorator.starbuzz;
 /**
  * Created by Gavin on 2017/3/7.
  */
-public class Whip extends CondimentDecorator {
+public class Whip/*奶泡*/ extends CondimentDecorator {
     Beverage beverage;
 
     @Override
