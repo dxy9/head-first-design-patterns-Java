@@ -20,6 +20,7 @@ public class SoldState implements State {
 	}
  
 	public void dispense() {
+    	//先调用释放的动作
 		gumballMachine.releaseBall();
 		if (gumballMachine.getCount() > 0) {
 			gumballMachine.setState(gumballMachine.getNoQuarterState());

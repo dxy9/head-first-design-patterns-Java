@@ -20,6 +20,7 @@ public class WinnerState implements State {
 	}
  
 	public void dispense() {
+    	// 先发放球,然后再改变状态
 		gumballMachine.releaseBall();
 		if (gumballMachine.getCount() == 0) {
 			gumballMachine.setState(gumballMachine.getSoldOutState());

@@ -3,6 +3,7 @@ package headfirst.state.gumballstatewinner;
 import java.util.Random;
 
 public class HasQuarterState implements State {
+	// TODO 跟直接new Random的区别
 	Random randomWinner = new Random(System.currentTimeMillis());
 	GumballMachine gumballMachine;
  

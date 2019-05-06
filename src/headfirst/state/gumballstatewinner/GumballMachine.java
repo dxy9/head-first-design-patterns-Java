@@ -31,16 +31,18 @@ public class GumballMachine {
 	public void ejectQuarter() {
 		state.ejectQuarter();
 	}
- 
+
+	//摇杆和释放球的动作放到一起
 	public void turnCrank() {
 		state.turnCrank();
-		state.dispense();
+		state.dispense/*发放*/();
 	}
 
 	void setState(State state) {
 		this.state = state;
 	}
- 
+
+	//释放
 	void releaseBall() {
 		System.out.println("A gumball comes rolling out the slot...");
 		if (count != 0) {

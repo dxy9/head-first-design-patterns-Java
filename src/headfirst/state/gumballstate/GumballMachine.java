@@ -3,7 +3,7 @@ package headfirst.state.gumballstate;
 /**
  * Created by Gavin on 2017/3/21.
  */
-public class GumballMachine {
+public class    GumballMachine {
     State soldOutState;
     State noQuarterState;
     State hasQuarterState;
@@ -38,7 +38,9 @@ public class GumballMachine {
         state.turnCrank();
     }
 
+    //摇杆和释放球的动作分开=>不合理 TODO
     public void releaseBall/*释放球*/() {
+        soldState.dispense();
         System.out.println("A gumball comes rolling out the slot...");
         if (count != 0) {
             count--;
@@ -52,6 +54,7 @@ public class GumballMachine {
     public void refill(int count) {
         this.count += count;
         System.out.println("The gumball machine was just refilled; it's new count is: " + this.count);
+        // TODO 在其他的状态下,没有动作.只有在sellout状态下,进行状态的切换
         state.refill();
     }
 
