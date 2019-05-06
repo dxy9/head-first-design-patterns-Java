@@ -16,10 +16,12 @@ public class MenuItem extends MenuComponent {
         this.price = price;
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public String getDescription() {
         return description;
     }

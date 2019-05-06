@@ -7,6 +7,7 @@ import java.util.Iterator;
  * Created by Gavin on 2017/3/21.
  */
 public class Menu extends MenuComponent {
+    // 使用集合 TODO
     ArrayList<MenuComponent> menuComponents = new ArrayList<MenuComponent>();
     String name;
     String description;
@@ -49,7 +50,7 @@ public class Menu extends MenuComponent {
 
         Iterator<MenuComponent> iterator = menuComponents.iterator();
         while (iterator.hasNext()) {
-            MenuComponent menuComponent = (MenuComponent) iterator.next();
+            MenuComponent menuComponent =  iterator.next();
             menuComponent.print();
         }
     }

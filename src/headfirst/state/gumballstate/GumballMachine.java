@@ -38,7 +38,7 @@ public class GumballMachine {
         state.turnCrank();
     }
 
-    public void releaseBall() {
+    public void releaseBall/*释放球*/() {
         System.out.println("A gumball comes rolling out the slot...");
         if (count != 0) {
             count--;

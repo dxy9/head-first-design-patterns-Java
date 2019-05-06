@@ -41,8 +41,10 @@ public class Menu extends MenuComponent {
 		}
 		return iterator;
 	}
- 
- 
+
+	/**
+	 * 使用这边的递归无法在客户端使用的时候进行条件过滤
+	 */
 	public void print() {
 		System.out.print("\n" + getName());
 		System.out.println(", " + getDescription());

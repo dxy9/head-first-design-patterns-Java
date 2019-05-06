@@ -30,7 +30,7 @@ public class GumballMachine {
 		}
 	}
 
-	public void ejectQuarter() {
+	public void ejectQuarter/*弹出*/() {
 		if (state == HAS_QUARTER) {
 			System.out.println("Quarter returned");
 			state = NO_QUARTER;
@@ -43,7 +43,7 @@ public class GumballMachine {
 		}
 	}
  
-	public void turnCrank() {
+	public void turnCrank/*转动曲柄*/() {
 		if (state == SOLD) {
 			System.out.println("Turning twice doesn't get you another gumball!");
 		} else if (state == NO_QUARTER) {
@@ -57,12 +57,12 @@ public class GumballMachine {
 		}
 	}
  
-	private void dispense() {
+	private void dispense/*发放*/() {
 		if (state == SOLD) {
-			System.out.println("A gumball comes rolling out the slot");
+			System.out.println("A gumball/*胶球*/ comes rolling out the slot");
 			count = count - 1;
 			if (count == 0) {
-				System.out.println("Oops, out of gumballs!");
+				System.out.println("Oops/*哎呀*/, out of gumballs!");
 				state = SOLD_OUT;
 			} else {
 				state = NO_QUARTER;
